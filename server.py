@@ -9,7 +9,7 @@ def greeting():
 
 @app.route("/calculator/add", methods=['POST'])
 def add():
-    data = resquest.json
+    data = request.json
     fn=data["first"]
     sn=data["second"]
     res={
@@ -19,7 +19,7 @@ def add():
 
 @app.route("/calculator/subtract", methods=['POST'])
 def subtract():
-    data = resquest.json
+    data = request.json
     fn=data["first"]
     sn=data["second"]
     res={
